@@ -1,9 +1,11 @@
-function TodoItem() {
+import './TodoItem.css'
+
+function TodoItem(props) {
      return (
           <li>
-               <span>✅</span>
-               <p>Cosa a hacer</p>
-               <span>❌</span>
+               <span>{`${props.completed === true ? "🔳" : "✅"}`}</span>
+               <p className={`${props.completed && "checked"}`}>{props.text}</p>
+               <span className='cross {``}'>❌</span>
           </li>
      );
 }

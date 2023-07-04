@@ -1,0 +1,28 @@
+li{
+     background-color:whitesmoke;
+     border: 1px solid blueviolet;
+     display: flex;
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 5px;
+     border-radius: 5px;
+}
+p{
+     margin: 0 10px;
+     width: 100%;
+}
+span{
+     cursor: pointer;
+}
+.cross{
+     transition: all 0.2s ease-in-out;
+}
+.cross:hover{
+     transform: rotate(90deg);
+}
+.checked{
+     text-decoration: line-through;
+}
+.hide{
+     display: none;
+}
