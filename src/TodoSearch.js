@@ -1,21 +1,20 @@
-import './TodoSearch.css'; 
+import './TodoSearch.css';
 import React from 'react';
 
-function TodoSearch(){
-     const [searchValue, setSearchValue] = React.
-     useState('');
+function TodoSearch({
+     propiedadSearchValue,
+     propiedadSetSearchValue
+}) {
 
-     console.log('Los usuarios buscan ' + searchValue);
-
-     return(
-          <input 
-          placeholder="Cortar Cebolla" 
-          value={searchValue}
-          onChange={(e) => {
-               setSearchValue(e.target.value)
-          }}
+     return (
+          <input
+               placeholder="Cortar Cebolla"
+               value={propiedadSearchValue}
+               onChange={(e) => {
+                    propiedadSetSearchValue(e.target.value)
+               }}
           />
      )
 }
 
-export {TodoSearch}
+export { TodoSearch }
